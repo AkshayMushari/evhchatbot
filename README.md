@@ -14,15 +14,10 @@ Next Steps:
 
 
 
-Step 1: Build the Image
-   docker-compose build
-Step 2: Start the Container
-   docker-compose up -d
-Step 3: Verify Running Containers
-    docker ps
-    
-=>. Access the Services
+Step 1: Build the Image   =>   docker-compose build              
+Step 2: Start the Container   =>   docker-compose up -d
+Step 3: Verify Running Containers   =>    docker ps
+ =>. Access the Services
     FastAPI Backend: http://localhost:8000/docs
     Streamlit Frontend: http://localhost:8501
-=>. Stop and Remove the Container
-    docker-compose down
+=>. Stop and Remove the Container   =>  docker-compose down
