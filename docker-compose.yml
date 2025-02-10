@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  chatbot:
+    build: .
+    ports:
+      - "8000:8000"  # FastAPI
+      - "8501:8501"  # Streamlit
+    environment:
+      - GROQ_API_KEY=your_groq_api_key
+    volumes:
+      - .:/app
+    restart: always
